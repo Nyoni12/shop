@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Fresh Market</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Fresh Market</div>
+        <button class="navbar-toggle" id="navbar-toggle">☰</button>
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="video-background">
+            <!-- Using YouTube embed iframe instead of <video> -->
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Y1aVOCgVjhc?autoplay=1&mute=1&loop=1&playlist=Y1aVOCgVjhc"
+                title="Fresh Market Video Background" frameborder="0" allow="autoplay; loop" allowfullscreen></iframe>
+        </div>
+        <div class="hero-text">
+            <h1>Freshness Delivered to Your Doorstep</h1>
+            <p>Premium Quality Meat, Vegetables & Fruits</p>
+            <a href="#" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="products">
+        <center><h2>Featured Products</h2></center>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvb5td1WAODzt98-IgBQfhRgIAfekR1j2g0w&s" alt="Pork">
+                <h3>Pork</h3>
+                <p>$10.99</p>
+                <button class="btn btn-primary">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKKat_sYCIxwIkxbssydg3Inrl5DVfdLr75w&s" alt="Beef">
+                <h3>Beef</h3>
+                <p>$12.99</p>
+                <button class="btn btn-primary">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVuac2B5b7Tgb8y5UgIqhGQDxoQkrcIqnVfQ&s" alt="Chicken">
+                <h3>Chicken</h3>
+                <p>$8.99</p>
+                <button class="btn btn-primary">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-7GYIscTKxmOvgNxu33VronxDQJkI5TajlQ&s" alt="Tomatoes">
+                <h3>Tomatoes</h3>
+                <p>$3.49</p>
+                <button class="btn btn-primary">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC-ofnfmOi_hlJ4VjIbRU3WMu4u25-UDp0Mw&s" alt="Potatoes">
+                <h3>Potatoes</h3>
+                <p>$1.99</p>
+                <button class="btn btn-primary">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc_Qu8_hY5Mo0kTgH7R9GLDimnxWAL6uTV8A&s" alt="Apples">
+                <h3>Apples</h3>
+                <p>$4.99</p>
+                <button class="btn btn-primary">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About, Contact and Locations Section in Cards Side by Side -->
+    <section class="info-section">
+        <div class="container">
+            <div class="row">
+                <!-- About Us Card -->
+                <div class="col-md-4">
+                    <div class="info-card">
+                        <h2>About Us</h2>
+                        <p>We are committed to bringing you the freshest, highest quality produce and meats, sourced locally and sustainably. Our mission is to make healthy eating easier for everyone.</p>
+                    </div>
+                </div>
+                <!-- Contact Us Card -->
+                <div class="col-md-4">
+                    <div class="info-card">
+                        <h2>Contact Us</h2>
+                        <p>We would love to hear from you!</p>
+                        <ul>
+                            <li>Phone: 123-456-7890</li>
+                            <li>Email: email@example.com</li>
+                            <li>Address: 123 Fresh Market Street, Bulawayo</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Locations Card -->
+                <div class="col-md-4">
+                    <div class="info-card">
+                        <h2>To Get Our Products</h2>
+                        <p>Visit us at:</p>
+                        <ul>
+                            <li>Downtown Market: Saturdays, 8AM - 12PM</li>
+                            <li>Eastside Market: Tuesdays, 3PM - 6PM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact us: 123-456-7890 | email@example.com</p>
+        <p>Follow us on Social Media</p>
+        <p>&copy; 2024 Fresh Market</p>
+    </footer>
+
+    <script>
+        const navbarToggle = document.getElementById('navbar-toggle');
+        const navbar = document.getElementById('navbar');
+
+        navbarToggle.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
