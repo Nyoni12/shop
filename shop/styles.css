@@ -15,6 +15,16 @@ header {
     position: relative;
 }
 
+.logo {
+    font-size: 24px; /* Adjust logo text size */
+}
+
+.logo-img {
+    width: 80px; /* Set logo width */
+    height: 80px; /* Set logo height */
+    margin-left: 10px; /* Space between the text and logo */
+}
+
 .navbar-toggle {
     display: none;
     font-size: 24px;
